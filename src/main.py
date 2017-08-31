@@ -41,6 +41,6 @@ if __name__ == '__main__':
     found = SlowSearch(numlist, number)
     
     if (found):
-        print(True + " - The number is in the list.")
+        print(str(True) + " - The number is in the list.")
     else:
-        print(False + " - The number is not in the list.")
+        print(str(False) + " - The number is not in the list.")
