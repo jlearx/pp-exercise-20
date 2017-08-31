@@ -47,7 +47,6 @@ def BinarySearch(numlist, number):
     return BinSearchRec(numlist, number)
         
 def BinSearchRec(numlist, number):
-    print(numlist)
     length = len(numlist)
     
     # Base case
@@ -56,8 +55,7 @@ def BinSearchRec(numlist, number):
         return False
     
     # Choose the middle of the (sub)list as our guess
-    midIdx = length / 2
-    print(midIdx)
+    midIdx = length // 2
     middle = numlist[midIdx]
     
     # Did we find the number with our guess?
@@ -90,4 +88,4 @@ if __name__ == '__main__':
     if (found):
         print(str(True) + " - The number is in the list.")
     else:
-        print(str(False) + " - The number is not in the list.")        
+        print(str(False) + " - The number is not in the list.")
